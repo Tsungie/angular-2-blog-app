@@ -9,7 +9,6 @@ export class ArticleService {
 
   constructor(private _http: Http) { }
   getArticles(){
-    console.log(">>>>>>>>>>>>>>>>>>>");
     return this._http.get("/api/all")
     .map(result => this.result = result.json());
   }
