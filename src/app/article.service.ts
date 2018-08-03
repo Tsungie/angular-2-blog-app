@@ -4,7 +4,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class ArticleService {
-
+  
   result:any;
 
   constructor(private _http: Http) { }
@@ -13,4 +13,8 @@ export class ArticleService {
     .map(result => this.result = result.json());
   }
 
+  getArticle(id){
+    return this._http.get("/api/articles/"+id)
+    .map(result => this.result = result.json());
+  }
 }
