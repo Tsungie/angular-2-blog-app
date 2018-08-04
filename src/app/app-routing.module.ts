@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { ArticleComponent } from './article/article.component';
+import { CreateComponent } from './create/create.component';
 
 const routes: Routes = [
 
@@ -14,7 +15,11 @@ const routes: Routes = [
   {
     path: 'articles/:id',
     component: ArticleComponent
-  }
+  },
+  {
+    path: 'create',
+    component: CreateComponent
+  },
 ];
 
 @NgModule({
