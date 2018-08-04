@@ -1,9 +1,6 @@
 <div class="article-container">
     <form [formGroup] ="articleFrm" (ngSubmit)="addArticle(articleFrm.value)" *ngIf="articleFrm">
-     
-  </form>
-   
-    <div class="row expanded">
+       <div class="row expanded">
       <div class="small-12 columns">
         <label> Article Title
           <input type="text" name="title" [formControl]="articleFrm.controls['title']" formControlName="title">
@@ -24,6 +21,6 @@
       </div>
     </div> 
   
-
+  </form>
    
 </div>
